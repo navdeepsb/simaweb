@@ -1,0 +1,34 @@
+$navFontSize: 1rem;
+
+.header__nav {
+    text-align: right;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 18px;
+
+        li {
+            display: inline-block;
+            min-width: 50px;
+
+            a {
+                color: darken( white, 30% );
+                text-decoration: none;
+                border-bottom: 0;
+                font-size: $navFontSize;
+                padding: 15px 20px;
+
+                &.active {
+                    color: $maize;
+                }
+
+                &:not(.active):hover {
+                    color: darken( white, 10% );
+                    background: rgba( white, 0.05 );
+                }
+            }
+        }
+    }
+}

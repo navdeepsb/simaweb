@@ -43,12 +43,19 @@ class EventHandler( webapp2.RequestHandler ):
     def get( self ):
         self.response.write( JINJA_ENVIRONMENT.get_template( "event.html" ).render() )
 
+# Handler for `/org-officers`
+# -------------------------------------------------------------------
+class OfficersHandler( webapp2.RequestHandler ):
+    def get( self ):
+        self.response.write( JINJA_ENVIRONMENT.get_template( "officers.html" ).render() )
+
 
 
 # App routes:
 app = webapp2.WSGIApplication([
     ( "/", IndexHandler ),
-    ( "/events", EventHandler )
+    ( "/events", EventHandler ),
+    ( "/org-officers", OfficersHandler )
 ], debug = True )
 
 

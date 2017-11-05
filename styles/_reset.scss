@@ -14,10 +14,49 @@ body {
     font-family: $bodyType;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: $headingType;
+
+    &.underline {
+        color: $accent;
+
+        &::after {
+            display: block;
+            content: "";
+            height: $headingUnderlineHeight;
+            border-radius: $headingUnderlineHeight;
+            margin-top: 5px;
+            background: lighten( $accent, 30% );
+        }
+    }
 }
 
-h2, h3 {
-    font-family: $subHeadingType;
+p, ul, ol {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+section {
+    margin-top: $contentSepVal;
+
+    h1:first-child, h2:first-child, h3:first-child {
+        margin-top: 0;
+    }
+
+    &:first-child {
+        min-height: 50vh;
+    }
+
+    &.huge-spacing {
+        margin-top: 1.5 * $contentSepVal;
+    }
 }

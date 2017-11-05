@@ -1,14 +1,18 @@
 {% extends "_layout.html" %}
+{% set active_page = "index" %}
+
+{% block hero %}
+<div class="header__hero img-wrapper">
+    <img src="/public/img/hero.jpg" alt="Hero image">
+    <div class="container header__hero-caption">
+        <blockquote class="txt">Uniting UMSI students<br />across degree programs &amp; specializations, and<br />facilitating communication between students &amp; the administration.</blockquote>
+    </div><!-- .header__hero-caption -->
+</div><!-- .header__hero -->
+{% endblock %}
 
 {% block content %}
-    {{ super() }}
-    <h1>Welcome to SIMA's website</h1>
+<section>
+    <h2 class="underline">SIMA</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro vitae dolorum, culpa at ipsum, ab aut, quos architecto adipisci excepturi provident assumenda id nobis velit soluta, libero voluptatum sint tempore consequatur. Nam quod itaque, doloremque ipsa, aspernatur, maxime nisi quia inventore asperiores provident temporibus non.</p>
-    <br />
-    <br />
-    <h3>Home page</h3>
-    <p>Gotta get the right domain, yo...</p>
-    <a href="/events">Events</a>
-    <button>Click here</button>
-    <input type="text" placeholder="Enter email address" />
+</section>
 {% endblock %}

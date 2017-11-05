@@ -1,16 +1,28 @@
+// Colors:
+$blue: #283E56;
+$maize: #fed024;
+$maize_um: #ffcb05;
+$blue_um: #00274c;
+$eggplant: #5d495f;
+
+
 // Website colors:
-$accent: #283E56;
-$siteBackground: #ffffff;
-
-
-
-// Typography:
-$headingType: "Abril Fatface", "Times New Roman", serif;
-$subHeadingType: "Work Sans", "Calibri", "Arial", sans-serif;
-$bodyType: "Work Sans", "Calibri", "Arial", sans-serif;
-
+$accent: $eggplant;
+$siteBackground: darken( white, 3% );
 
 
 // Typography colors:
 $primaryTextColor: #333333;
 $secondaryTextColor: #999999;
+
+
+// Typography:
+$headingType: "Roboto Condensed", "Times New Roman", serif;
+$bodyType: "Work Sans", "Calibri", "Arial", sans-serif;
+$cursiveType: "Sacramento", script;
+
+
+// Dimensions:
+$containerWidth: 69rem;
+$contentSepVal: 120px;
+$headingUnderlineHeight: 2px;

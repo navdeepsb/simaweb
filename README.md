@@ -12,13 +12,14 @@ A website for University of Michigan School of Information Master's Association 
 
 #### Project highlights
 
-1. Use of [Sass](http://sass-lang.com/ "Sass - CSS with superpowers") w/ [Grunt](https://gruntjs.com/ "Grunt - The JavaScript Task Runner")
-2. Used Github to track commits to this repo (also good for future maintenance)
-2. Minified assets for production deployment
-3. Professional favicon from [Favicon Generator](https://realfavicongenerator.net/ "Favicon Generator")
-3. Persistence with db (Firebase?)
-4. Deployed on Google App Engine
-4. Used BEM notations for CSS class names
+- Use of [Sass](http://sass-lang.com/ "Sass - CSS with superpowers") w/ [Grunt](https://gruntjs.com/ "Grunt - The JavaScript Task Runner")
+- Didn't use Bootstrap or any other CSS framework
+- Used Github to track commits to this repo (also good for future maintenance)
+- Minified assets for production deployment
+- Professional favicon from [Favicon Generator](https://realfavicongenerator.net/ "Favicon Generator")
+- Persistence with db (Firebase?)
+- Deployed on Google App Engine
+- Used BEM notations for CSS class names
 
 .
 
