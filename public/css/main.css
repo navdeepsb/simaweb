@@ -58,8 +58,11 @@ h2, h3 {
 .header .header__nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #b3b3b3;
   font-size: 0.9rem;
+}
+.header .header__nav ul li a.active {
+  color: white;
 }
 
 .grid:after {

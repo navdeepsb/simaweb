@@ -33,8 +33,12 @@
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
-                    color: white;
+                    color: darken( white, 30% );
                     font-size: 0.9rem;
+
+                    &.active {
+                        color: white;
+                    }
                 }
             }
         }

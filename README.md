@@ -16,7 +16,7 @@ A website for University of Michigan School of Information Master's Association 
 2. Used Github to track commits to this repo (also good for future maintenance)
 2. Minified assets for production deployment
 3. Professional favicon from [Favicon Generator](https://realfavicongenerator.net/ "Favicon Generator")
-3. Persistence with db, SQLite
+3. Persistence with db (Firebase?)
 4. Deployed on Google App Engine
 4. Used BEM notations for CSS class names
 
@@ -26,6 +26,16 @@ A website for University of Michigan School of Information Master's Association 
 #### Setting up the project for development
 
 COMING SOON!
+
+.
+
+
+#### Todo
+
+- [ ] Responsive web
+- [ ] A11y standards - WCAG 2.0 AA compliance
+- [ ] Content minification for production deployment
+- [ ] Firebase db sessions
 
 .
 

@@ -15,9 +15,9 @@ module.exports = ( grunt ) ->
     dirConfig =
         styles:
             src: "styles"
-            dest: "static/css"
+            dest: "public/css"
         scripts:
-            src: "static/js"
+            src: "public/js"
         views:
             index: "templates/_layout.html"
 
