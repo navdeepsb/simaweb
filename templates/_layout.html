@@ -1,0 +1,72 @@
+<!--
+ ! @author Navdeep Singh Bagga
+ !   @term Fall 2017
+ !   @desc Root view file for SIMA web
+ !-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- page info :start -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School of Information Master's Association (SIMA) {{ currYear }} | University of Michigan">
+    <!-- page info :end -->
+
+    <title>School of Information Master's Association (SIMA) {{ currYear }} | University of Michigan</title>
+
+    <!-- favicon :start -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon/manifest.json">
+    <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#00274c">
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#00274c">
+    <!-- favicon :end -->
+
+    <!-- stylesheets:start -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Work+Sans:300,400,700">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- stylesheets:end -->
+</head>
+<body>
+    <header class="header">
+        <div class="header__topbar">
+            <div class="container grid">
+                <div class="col col-6">
+                    <img src="/static/img/logo.png" alt="Logo for the website" height="40">
+                </div><!-- .col -->
+                <div class="col col-6 header__nav">
+                    <nav>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/org-officers">Org officers</a></li>
+                            <li><a href="/events">Events</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- .col -->
+            </div><!-- .grid -->
+        </div>
+        <div class="header__hero"></div>
+    </header>
+
+    <div class="container">
+    {% block content %}
+        <p><u>This line is present in the base file.</u></p>
+        <br />
+    {% endblock %}
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Website footer</p>
+        </div>
+    </footer>
+
+    <!-- scripts:start -->
+    <script src="/static/js/lib/jquery.min.js"></script>
+    <!-- scripts:end -->
+</body>
+</html>

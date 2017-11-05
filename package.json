@@ -1,0 +1,27 @@
+{
+  "name": "umsi-simaweb-f17",
+  "version": "0.0.0",
+  "description": "A website for University of Michigan School of Information Master's Association (SIMA). SIMA is a student organization comprising of students elected from the current cohort. These students conduct weekly meetings and discuss how to make the UMSI program even better by listening to the students, acting as their bridge to the school of administration. SIMA also hosts regular extra-curricular events to keep the students feel comfortable as they progress through the rigorous course load at UMSI.",
+  "main": "app.yaml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navdeepsb/simaweb.git"
+  },
+  "keywords": [
+    "Website"
+  ],
+  "author": "Navdeep Singh Bagga <navdeepb3191@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/navdeepsb/simaweb/issues"
+  },
+  "homepage": "https://github.com/navdeepsb/simaweb#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

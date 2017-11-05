@@ -1,0 +1,27 @@
+application: umsi-simaweb-f17
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /etc
+  static_dir: etc
+
+- url: .*
+  script: main.app
+
+skip_files:
+- ^sass-cache(/.*)?
+- .*sass-cache
+- ^node_modules(/.*)?
+- .*node_modules
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

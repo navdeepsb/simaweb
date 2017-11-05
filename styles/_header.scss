@@ -1,0 +1,42 @@
+.header {
+    position: relative;
+
+    .header__topbar {
+        padding: 30px;
+        // min-height: 60px;
+        background: rgba( black, 0.6 );
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .header__hero {
+        background-color: $accent;
+        // background: url( "../img/hero.jpg" ) center;
+        height: 600px;
+    }
+
+    .header__nav {
+        text-align: right;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                min-width: 50px;
+                padding: 10px 15px;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

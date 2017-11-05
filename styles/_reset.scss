@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $siteBackground;
+    color: $primaryTextColor;
+    font-family: $bodyType;
+}
+
+h1 {
+    font-family: $headingType;
+}
+
+h2, h3 {
+    font-family: $subHeadingType;
+}

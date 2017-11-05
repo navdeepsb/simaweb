@@ -1,0 +1,34 @@
+// Variables:
+$gutter: 10px;
+
+// Mixins:
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.grid {
+    @include clearfix;
+}
+
+.col {
+    float: left;
+    padding: $gutter 0 $gutter $gutter;
+
+    .grid &:last-of-type {
+        padding-right: $gutter;
+    }
+
+    .grid &.no-gutter {
+        padding: 0;
+    }
+}
+
+@for $num from 1 through 12 {
+    .col-#{ $num } {
+        width: $num / 12 * 100%;
+    }
+}
