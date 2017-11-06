@@ -227,7 +227,7 @@ section.huge-spacing {
   min-width: 50px;
 }
 .header__nav ul li a {
-  color: #b3b3b3;
+  color: #e6e6e6;
   text-decoration: none;
   border-bottom: 0;
   font-size: 1rem;
@@ -237,7 +237,8 @@ section.huge-spacing {
   color: #fed024;
 }
 .header__nav ul li a:not(.active):hover {
-  color: #e6e6e6;
+  color: white;
+  color: white;
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -249,6 +250,35 @@ section.huge-spacing {
 }
 .footer p {
   margin: 0;
+}
+
+.officer-cell__wrapper {
+  display: inline-block;
+  width: 33.33333%;
+  margin: 0 -4px;
+  padding: 20px 20px 0 0;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+.officer-cell__wrapper:nth-child(3n) {
+  padding-right: 0;
+}
+.officer-cell__wrapper .officer-cell .officer-cell__dp {
+  width: 90px;
+  height: 90px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.officer-cell__wrapper .officer-cell p {
+  margin: 0;
+}
+.officer-cell__wrapper .officer-cell a.social__cell {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 7px 5px 0 0;
+  border-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

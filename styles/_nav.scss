@@ -14,7 +14,7 @@ $navFontSize: 1rem;
             min-width: 50px;
 
             a {
-                color: darken( white, 30% );
+                color: darken( white, 10% );
                 text-decoration: none;
                 border-bottom: 0;
                 font-size: $navFontSize;
@@ -25,7 +25,8 @@ $navFontSize: 1rem;
                 }
 
                 &:not(.active):hover {
-                    color: darken( white, 10% );
+                color: white;
+                    color: white;
                     background: rgba( white, 0.05 );
                 }
             }

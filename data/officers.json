@@ -1,0 +1,86 @@
+[{
+    "name": "Pallavi Gupta",
+    "role": "President",
+    "email": "pallavig@umich.edu",
+    "imgFilename": "pallavi.jpg",
+    "socialLinks": [
+        {
+            "url": "https://www.facebook.com/pallavi05g",
+            "type": "facebook"
+        }
+    ]
+},{
+    "name": "Julie Cruz",
+    "role": "Vice-President",
+    "email": "jucruz@umich.edu",
+    "imgFilename": "julie.jpg",
+    "socialLinks": [
+        {
+            "url": "https://www.facebook.com/julie.cruz.2222",
+            "type": "facebook"
+        }
+    ]
+},{
+    "name": "Navdeep Singh Bagga",
+    "role": "Information Manager",
+    "email": "navdeepb@umich.edu",
+    "imgFilename": "navdeep.jpg",
+    "socialLinks": [
+        {
+            "url": "http://www.navdeepsb.com/",
+            "type": "online"
+        },
+        {
+            "url": "https://www.facebook.com/navdeepsb",
+            "type": "facebook"
+        },
+        {
+            "url": "https://www.twitter.com/navdeepsb",
+            "type": "twitter"
+        }
+    ]
+},{
+    "name": "Russel Peterson",
+    "role": "Event Coordinator",
+    "email": "prussel@umich.edu",
+    "imgFilename": "russel.jpg",
+    "socialLinks": [
+        {
+            "url": "https://www.facebook.com/russel.peterson.5",
+            "type": "facebook"
+        }
+    ]
+},{
+    "name": "Adam Gitterman",
+    "role": "MHI Representative",
+    "email": "agitterm@umich.edu",
+    "imgFilename": "adam.jpg",
+    "socialLinks": [
+        {
+            "url": "https://www.facebook.com/adam.gitterman",
+            "type": "facebook"
+        }
+    ]
+},{
+    "name": "Vidhya Aravind",
+    "role": "Diversity Coordinator",
+    "imgFilename": "vidhya.jpg",
+    "email": "vidh@umich.edu",
+    "socialLinks": [
+        {
+            "url": "https://www.facebook.com/kid.vidh",
+            "type": "facebook"
+        }
+    ]
+},{
+    "name": "Omkar Sunkersett",
+    "role": "Treasurer",
+    "imgFilename": "omkar.jpg",
+    "email": "osunkers@umich.edu",
+    "socialLinks": [
+        {
+            "url": "https://www.facebook.com/osunkersett",
+            "type": "facebook"
+        }
+    ]
+}]
