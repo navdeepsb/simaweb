@@ -1,6 +1,7 @@
 .container {
     max-width: $containerWidth;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .hide {
@@ -26,7 +27,11 @@
 }
 
 .small {
-    font-size: 0.85rem;
+    @media screen and (min-width: $break-desktp) {
+        & {
+            font-size: 0.85rem;
+        }
+    }
 }
 
 .disabled {
@@ -40,5 +45,29 @@
 
     img {
         border: 1px solid white;
+    }
+}
+
+.hero-cred {
+    display: none;
+
+    @media screen and (min-width: $break-desktp) {
+        & {
+            display: block;
+        }
+    }
+}
+
+a#skipLink {
+    width: 140px;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: -999px;
+    color: white;
+
+    &:focus {
+        top: 0;
+        left: 0;
     }
 }

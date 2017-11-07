@@ -1,34 +1,81 @@
 $navFontSize: 1rem;
 
 .header__nav {
-    text-align: right;
+    @media screen and (min-width: $break-tablet) {
+        & {
+            text-align: right;
+        }
+    }
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-top: 18px;
+    nav {
+        display: none;
 
-        li {
-            display: inline-block;
-            min-width: 50px;
+        @media screen and (min-width: $break-tablet) {
+            & {
+                display: block !important;
+            }
+        }
 
-            a {
-                color: darken( white, 10% );
-                text-decoration: none;
-                border-bottom: 0;
-                font-size: $navFontSize;
-                padding: 15px 20px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 18px;
 
-                &.active {
-                    color: $maize;
+            li {
+                padding: 10px 0;
+
+                @media screen and (min-width: $break-tablet) {
+                    & {
+                        padding: 0;
+                        display: inline-block;
+                        min-width: 50px;
+                    }
                 }
 
-                &:not(.active):hover {
-                color: white;
-                    color: white;
-                    background: rgba( white, 0.05 );
+                a {
+                    color: darken( white, 10% );
+                    text-decoration: none;
+                    border-bottom: 0;
+                    font-size: $navFontSize;
+                    font-size: 1.2rem;
+
+                    @media screen and (min-width: $break-tablet) {
+                        & {
+                            padding: 15px 20px;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &.active {
+                        color: $maize;
+                    }
+
+                    &:not(.active):hover {
+                        @media screen and (min-width: $break-tablet) {
+                            & {
+                                color: white;
+                                background: rgba( white, 0.05 );
+                            }
+                        }
+                    }
                 }
+            }
+        }
+    }
+
+    .nav-menu-toggle {
+        display: block;
+        color: white;
+        border-bottom: 0;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin-top: 35px;
+        text-align: center;
+
+        @media screen and (min-width: $break-tablet) {
+            & {
+                display: none;
             }
         }
     }

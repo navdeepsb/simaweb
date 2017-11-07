@@ -46,14 +46,24 @@ a {
 }
 
 section {
-    margin-top: $contentSepVal;
+    margin-top: $contentSepVal / 2;
+
+    @media screen and (min-width: $break-desktp) {
+        & {
+            margin-top: $contentSepVal;
+        }
+    }
 
     h1:first-child, h2:first-child, h3:first-child {
         margin-top: 0;
     }
 
     &.huge-spacing {
-        margin-top: $contentSepVal + 30px;
-        min-height: auto;
+        @media screen and (min-width: $break-desktp) {
+            & {
+                margin-top: $contentSepVal + 30px;
+                min-height: auto;
+            }
+        }
     }
 }

@@ -2,12 +2,12 @@
     {% for officer in data %}
     <div class="display-cell">
         <div class="display-cell--officer grid">
-            <div class="col col-4 no-gutter">
+            <div class="col col-4--fixed no-gutter">
                 <div class="display-cell--officer__dp img-wrapper">
                     <img src="/public/img/officers/{{ officer.imgFilename }}" alt="{{ officer.name }}">
                 </div>
             </div>
-            <div class="col col-8 no-gutter">
+            <div class="col col-8--fixed no-gutter">
                 <p>{{ officer.name }}</p>
                 <p><strong>{{ officer.role }}</strong></p>
                 <p class="small">{{ officer.email }}</p>

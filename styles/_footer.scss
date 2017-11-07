@@ -8,11 +8,33 @@
         margin: 0;
     }
 
-    .footer__social-icon {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border-bottom: 0;
-        margin-left: 10px;
+    .footer__text {
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $break-desktp) {
+            & {
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer__social {
+        text-align: center;
+
+        @media screen and (min-width: $break-desktp) {
+            & {
+                text-align: right;
+            }
+        }
+
+        .footer__social-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-bottom: 0;
+            margin-left: 10px;
+        }
     }
 }

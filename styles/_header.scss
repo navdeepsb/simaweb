@@ -5,15 +5,38 @@ $logoSize: 55px;
     color: white;
     position: relative;
 
+    .header__topbar {
+        padding: 20px;
+        background: $accent;
+        width: 100%;
+
+        @media screen and (min-width: $break-desktp) {
+            & {
+                padding: 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .container {
+            padding: 0;
+        }
+    }
+
     .header__logo {
-        padding-right: 15px;
-        border-right: 1px solid rgba( white, 0.5 );
         padding-top: 0;
         padding-bottom: 0;
 
         .logo {
             width: $logoSize;
             height: $logoSize;
+        }
+
+        @media screen and (min-width: $break-desktp) {
+            & {
+                padding-right: 15px;
+            }
         }
     }
 
@@ -34,20 +57,12 @@ $logoSize: 55px;
         }
     }
 
-    .header__topbar {
-        padding: 30px;
-        background: $accent;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
     .header__hero {
         width: 100%;
         height: 100vh;
         min-height: 600px;
-        background: $blue;
+        background: $accent;
+        display: none;
 
         .header__hero-caption {
             position: absolute;
@@ -63,6 +78,12 @@ $logoSize: 55px;
                 font-size: 1.2rem;
                 font-weight: 300;
                 line-height: 1.5;
+            }
+        }
+
+        @media screen and (min-width: $break-desktp) {
+            & {
+                display: block;
             }
         }
     }

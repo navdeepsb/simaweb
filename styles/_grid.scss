@@ -29,6 +29,16 @@ $gutter: 10px;
 
 @for $num from 1 through 12 {
     .col-#{ $num } {
+        width: 100%;
+
+        @media screen and (min-width: $break-mobile) {
+            & {
+                width: $num / 12 * 100%;
+            }
+        }
+    }
+
+    .col-#{ $num }--fixed {
         width: $num / 12 * 100%;
     }
 }
