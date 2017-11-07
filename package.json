@@ -1,5 +1,5 @@
 {
-  "name": "umsi-simaweb-f17",
+  "name": "um-sima",
   "version": "0.0.1",
   "description": "A website for University of Michigan School of Information Master's Association (SIMA). SIMA is a student organization comprising of students elected from the current cohort. These students conduct weekly meetings and discuss how to make the UMSI program even better by listening to the students, acting as their bridge to the school of administration. SIMA also hosts regular extra-curricular events to keep the students feel comfortable as they progress through the rigorous course load at UMSI.",
   "main": "app.yaml",

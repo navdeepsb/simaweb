@@ -28,7 +28,8 @@ A website for University of Michigan School of Information Master's Association 
 #### Setting up the project for development
 
 1. Run this web app from Google App Engine console
-2. Open terminal and run `clear && grunt watchify`
+2. Open terminal, get to the root of this directory and run `clear && grunt watchify`
+3. Browse the web app in browser (development env is set)
 
 .
 

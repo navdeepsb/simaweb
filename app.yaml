@@ -1,4 +1,4 @@
-application: umsi-simaweb-f17
+application: um-sima
 version: 1
 runtime: python27
 api_version: 1
