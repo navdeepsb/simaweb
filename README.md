@@ -17,26 +17,29 @@ A website for University of Michigan School of Information Master's Association 
 - Used Github to track commits to this repo (also good for future maintenance)
 - Minified assets for production deployment
 - Professional favicon from [Favicon Generator](https://realfavicongenerator.net/ "Favicon Generator")
-- Persistence with db (Firebase?)
+- Persistence with db (~~Firebase?~~ \*.json files)
 - Deployed on Google App Engine
 - Used BEM notations for CSS class names
+- Custom 404 page
 
 .
 
 
 #### Setting up the project for development
 
-COMING SOON!
+1. Run this web app from Google App Engine console
+2. Open terminal and run `clear && grunt watchify`
 
 .
 
 
 #### Todo
 
-- [ ] Responsive web
-- [ ] A11y standards - WCAG 2.0 AA compliance
-- [ ] Content minification for production deployment
-- [ ] Firebase db sessions
+- Responsive web
+- A11y standards - WCAG 2.0 AA compliance
+- Content minification for production deployment
+- ~~Firebase db sessions~~
+- Print css
 
 .
 

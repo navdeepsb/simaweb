@@ -1,0 +1,15 @@
+<div>
+    {% for event in data %}
+    <div class="display-cell">
+        <div class="display-cell--event">
+            <p><strong>{{ event.name }}</strong></p>
+            <p class="small">{{ event.when | formatDate }} {% if event.duration %}| From {{ event.duration }}{% endif %}</p>
+            <p class="small">{% if event.where.link %}At <a href="{{ event.where.link }}" title="{{ event.where.txt }}" target="_blank">{{ event.where.txt }}</a>{% elif event.where.txt %}At {{ event.where.txt }}{% endif %}</p>
+            <p class="small">{{ event.blurb }}</p>
+            {# <p class="small">{{ event.blurb[ 0:90 ] + "..." }}</p> #}
+            <p class="small">Organized by <strong>{{ event.organizer }}</strong></p>
+            <p class="right"><a href="/events/1223456">Know more</a></p>
+        </div><!-- .display-cell-event -->
+    </div><!-- .display-cell -->
+    {% endfor %}
+</div>

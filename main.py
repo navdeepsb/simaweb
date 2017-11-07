@@ -25,6 +25,19 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     autoescape = True )
 
 
+# My variables:
+DATA_FILES_PATH = "data/";
+
+
+# Read data files:
+with open( DATA_FILES_PATH + "officers.json" ) as data_file:
+    officersData = json.load( data_file )
+
+with open( DATA_FILES_PATH + "events.json" ) as data_file:
+    eventsData = json.load( data_file )
+
+
+
 logging.info( "Booting up the web server....." )
 
 
@@ -40,20 +53,30 @@ class IndexHandler( webapp2.RequestHandler ):
 # -------------------------------------------------------------------
 class EventHandler( webapp2.RequestHandler ):
     def get( self ):
-        self.response.write( JINJA_ENVIRONMENT.get_template( "events.html" ).render() )
+        _html = JINJA_ENVIRONMENT.get_template( "cmpt.event.html" ).render({ "data": eventsData })
+        self.response.write( JINJA_ENVIRONMENT.get_template( "events.html" ).render({ "eventsHtml": _html }) )
 
 # Handler for `/org-officers`
 # -------------------------------------------------------------------
-with open( "data/officers.json" ) as data_file:
-    officersData = json.load( data_file )
-
 class OfficersHandler( webapp2.RequestHandler ):
     def get( self ):
         _html = JINJA_ENVIRONMENT.get_template( "cmpt.officer.html" ).render({ "data": officersData })
 
         self.response.write( JINJA_ENVIRONMENT.get_template( "officers.html" ).render({ "officersHtml": _html }) )
 
-# Handler for `404` error
+# Handler for `/resources`
+# -------------------------------------------------------------------
+class ResourcesHandler( webapp2.RequestHandler ):
+    def get( self ):
+        self.response.write( JINJA_ENVIRONMENT.get_template( "resources.html" ).render() )
+
+# Handler for `/contact`
+# -------------------------------------------------------------------
+class ContactHandler( webapp2.RequestHandler ):
+    def get( self ):
+        self.response.write( JINJA_ENVIRONMENT.get_template( "contact.html" ).render() )
+
+# Handler for `404-error`
 # -------------------------------------------------------------------
 class Error404Handler( webapp2.RequestHandler ):
     def get( self ):
@@ -65,8 +88,16 @@ app = webapp2.WSGIApplication([
     ( "/", IndexHandler ),
     ( "/events", EventHandler ),
     ( "/org-officers", OfficersHandler ),
+    ( "/resources", ResourcesHandler ),
+    ( "/contact-us", ContactHandler ),
     ( "/.*", Error404Handler )
 ], debug = True )
+
+
+def formatDate( dt ):
+    _dt = datetime( dt[ "year" ], dt[ "month" ], dt[ "date" ] )
+    return [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" ][ _dt.weekday() ] + ", " + [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ][ _dt.month - 1 ] + " " + str( _dt.day )
+JINJA_ENVIRONMENT.filters[ "formatDate" ] = formatDate
 
 
 logging.info( "Web server boot-up successful!" )

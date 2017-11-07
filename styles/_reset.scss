@@ -57,6 +57,7 @@ section {
     }
 
     &.huge-spacing {
-        margin-top: 1.5 * $contentSepVal;
+        margin-top: $contentSepVal + 30px;
+        min-height: auto;
     }
 }

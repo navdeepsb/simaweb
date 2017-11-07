@@ -1,0 +1,43 @@
+[{
+    "name": "Meditation in Motion",
+    "when": {
+        "year": 2017,
+        "month": 11,
+        "date": 11
+    },
+    "duration": "2-4 pm",
+    "where": {
+        "txt": "Community Lounge (Ground Floor), School of Public Health bldg",
+        "link": "https://www.google.com/maps/place/University+of+Michigan:+School+of+Public+Health/@42.280577,-83.7326331,17z/data=!4m5!3m4!1s0x883cae5d4abdfad9:0xd9411d67f9356b63!8m2!3d42.2805731!4d-83.7304444"
+    },
+    "organizer": "SIMA",
+    "blurb": "Meditation in Motion is a health and wellness workshop for university students that combines mindfulness techniques with artistry to improve one's self-being. This workshop is for 2 hours in duration and consists of a 45 minute targeted meditation, 60 minute art project (origami/painting) and a 15 minute QA session with instructors from the Canton Public Library. Students from all specializations are encouraged to attend and enjoy."
+},{
+    "name": "International Students Day",
+    "when": {
+        "year": 2017,
+        "month": 11,
+        "date": 17
+    },
+    "duration": "",
+    "where": {
+        "txt": "",
+        "link_": ""
+    },
+    "organizer": "SIMA",
+    "blurb": "We are looking for volunteers to participate in UMSI’s event on account of International Students’ Day. Students from various programs are encouraged to showcase their culture and traditions by any form possible such as food, clothes, dance performances, etc. If you are interested, please let any of the SIMA officers know. Our email: simaofficers@umich.edu"
+},{
+    "name": "Multicultural Night / Potluck",
+    "when": {
+        "year": 2017,
+        "month": 11,
+        "date": 19
+    },
+    "duration": "",
+    "where": {
+        "txt": "Trotter Multicultural Center",
+        "link": ""
+    },
+    "organizer": "HISO",
+    "blurb": "The Health Informatics Student Organization (HISO) is organizing another get-together fun event. It's a potluck so prepare yourselves for a treat."
+}]

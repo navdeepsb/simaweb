@@ -1,9 +1,9 @@
 <div>
     {% for officer in data %}
-    <div class="officer-cell__wrapper">
-        <div class="officer-cell grid">
+    <div class="display-cell">
+        <div class="display-cell--officer grid">
             <div class="col col-4 no-gutter">
-                <div class="officer-cell__dp img-wrapper">
+                <div class="display-cell--officer__dp img-wrapper">
                     <img src="/public/img/officers/{{ officer.imgFilename }}" alt="{{ officer.name }}">
                 </div>
             </div>
@@ -13,13 +13,13 @@
                 <p class="small">{{ officer.email }}</p>
                 <p>
                 {% for link in officer.socialLinks %}
-                    <a href="{{ link.url }}" class="social__cell" target="_blank">
+                    <a href="{{ link.url }}" class="social-lnk" target="_blank">
                         <img src="/public/img/svgs/{{ link.type }}.svg" alt="{{ link.type }} link of {{ officer.name }}" />
                     </a>
                 {% endfor %}
                 </p>
             </div>
-        </div><!-- .officer__cell__inner -->
-    </div><!-- .officer__cell__wrapper -->
+        </div><!-- .display-cell-officer -->
+    </div><!-- .display-cell -->
     {% endfor %}
 </div>
