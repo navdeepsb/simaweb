@@ -52,10 +52,6 @@ section {
         margin-top: 0;
     }
 
-    &:first-child {
-        min-height: 50vh;
-    }
-
     &.huge-spacing {
         margin-top: $contentSepVal + 30px;
         min-height: auto;

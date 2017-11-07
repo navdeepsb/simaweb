@@ -32,3 +32,13 @@
 .disabled {
     color: $secondaryTextColor;
 }
+
+.event-img {
+    display: block;
+    min-height: 300px;
+    border-bottom: 2px solid white;
+
+    img {
+        border: 1px solid white;
+    }
+}
